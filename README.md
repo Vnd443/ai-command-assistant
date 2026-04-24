@@ -7,7 +7,7 @@
 
 > An intelligent command-line assistant powered by Claude Sonnet AI that understands natural language and executes OS-specific commands safely.
 
-![AI Command Assistant](cmd_agent_ss.png)
+![AI Command Assistant](cmd_agent_welcome_ss.png)
 
 ---
 
@@ -50,12 +50,22 @@ Automatically detects your operating system and generates platform-specific comm
 
 ---
 
+## 📸 Screenshots
+
+### Welcome Screen
+![Welcome Screen](cmd_agent_welcome_ss.png)
+
+### Command Execution
+![Command Execution](cmd_agent_ss.png)
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - Python 3.8 or higher
-- API access to Claude Sonnet (IBM Services Essentials)
+- API access to Claude Sonnet
 - pip (Python package manager)
 
 ### Installation
@@ -70,19 +80,14 @@ Automatically detects your operating system and generates platform-specific comm
    ```bash
    pip install -r requirements.txt
    ```
-   
-   Required packages:
-   - `openai>=1.0.0` - For AI integration
-   - `python-dotenv>=1.0.0` - For environment management
-   - `colorama>=0.4.6` - For terminal styling
 
 3. **Configure environment variables**
    
    Create a `.env` file in the project root:
    ```env
    api_key=your_api_key_here
-   base_url=https://servicesessentials.ibm.com/apis/v3
-   model_id=global/anthropic.claude-sonnet-4-6
+   base_url=your_api_base_url
+   model_id=your_model_id
    ```
    
    ⚠️ **Important**: Never commit your `.env` file to version control!
@@ -237,13 +242,14 @@ BLOCKED_COMMANDS = [
 
 ```
 ai-command-assistant/
-├── cmd_agent_01.py          # Main application
-├── cmd_agent_ss.png          # Screenshot
-├── README.md                 # This file
-├── .env                      # Environment variables (not in repo)
-├── .env.example             # Environment template
-├── .gitignore               # Git ignore rules
-└── requirements.txt          # Python dependencies
+├── cmd_agent_01.py              # Main application
+├── cmd_agent_welcome_ss.png     # Welcome screen screenshot
+├── cmd_agent_ss.png             # Command execution screenshot
+├── README.md                    # This file
+├── .env                         # Environment variables (not in repo)
+├── .env.example                 # Environment template
+├── .gitignore                   # Git ignore rules
+└── requirements.txt             # Python dependencies
 ```
 
 ---
@@ -255,18 +261,10 @@ ai-command-assistant/
 The application requires these environment variables in your `.env` file:
 
 ```env
-# API Configuration
 api_key=your_api_key_here
-base_url=https://servicesessentials.ibm.com/apis/v3
-model_id=global/anthropic.claude-sonnet-4-6
+base_url=your_api_base_url
+model_id=your_model_id
 ```
-
-### Getting API Access
-
-1. Sign up for IBM Services Essentials
-2. Navigate to API credentials section
-3. Generate a new API key for Claude Sonnet
-4. Copy the credentials to your `.env` file
 
 ---
 
@@ -346,12 +344,6 @@ you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
     http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
 ```
 
 ---
@@ -359,7 +351,6 @@ limitations under the License.
 ## 🙏 Acknowledgments
 
 - **Anthropic** for Claude Sonnet AI technology
-- **IBM Services Essentials** for API access
 - **OpenAI** for the excellent SDK
 - **Python Community** for amazing libraries
 - All contributors and users of this project
