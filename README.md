@@ -2,10 +2,10 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://www.python.org/)
-[![AI](https://img.shields.io/badge/AI-Claude%20Sonnet-purple.svg)](https://www.anthropic.com/)
+[![AI](https://img.shields.io/badge/AI-GPT--5.4-purple.svg)](https://www.openai.com/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)]()
 
-> An intelligent command-line assistant powered by Claude Sonnet AI that understands natural language and executes OS-specific commands safely.
+> An intelligent command-line assistant powered by GPT-5.4 AI that understands natural language and executes OS-specific commands safely.
 
 ![AI Command Assistant](cmd_agent_welcome_ss.png)
 
@@ -29,7 +29,7 @@
 ## ✨ Key Features
 
 ### 🤖 AI-Powered Intelligence
-Leverages Claude Sonnet 4.6 to understand natural language queries and generate appropriate commands for your operating system.
+Leverages GPT-5.4 to understand natural language queries and generate appropriate commands for your operating system.
 
 ### 🛡️ Built-in Safety Mechanisms
 - Automatic detection and blocking of dangerous commands
@@ -65,7 +65,7 @@ Automatically detects your operating system and generates platform-specific comm
 ### Prerequisites
 
 - Python 3.8 or higher
-- API access to Claude Sonnet
+- API access to GPT-5.4
 - pip (Python package manager)
 
 ### Installation
@@ -184,7 +184,7 @@ graph LR
 ### Component Overview
 
 1. **User Interface Layer**: Colorful CLI with Colorama styling
-2. **AI Processing Layer**: Claude Sonnet integration via OpenAI SDK
+2. **AI Processing Layer**: GPT-5.4 integration via OpenAI SDK
 3. **Safety Layer**: Command validation and dangerous command blocking
 4. **Execution Layer**: Cross-platform command execution using subprocess
 5. **Context Management**: Conversation history tracking for better AI responses
@@ -228,7 +228,7 @@ BLOCKED_COMMANDS = [
 
 | Component | Technology |
 |-----------|-----------|
-| **AI Model** | Claude Sonnet 4.6 (Anthropic) |
+| **AI Model** | GPT-5.4 (OpenAI) |
 | **Language** | Python 3.8+ |
 | **AI Integration** | OpenAI SDK |
 | **CLI Styling** | Colorama |
@@ -350,8 +350,7 @@ You may obtain a copy of the License at
 
 ## 🙏 Acknowledgments
 
-- **Anthropic** for Claude Sonnet AI technology
-- **OpenAI** for the excellent SDK
+- **OpenAI** for GPT-5.4 AI technology and excellent SDK
 - **Python Community** for amazing libraries
 - All contributors and users of this project
 
